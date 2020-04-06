@@ -4,4 +4,4 @@ This is a more "Pro" page for resume
 
 # Credits
 
-https://zhaofeng.li
+[hack.css](https://github.com/egoist/hack)
