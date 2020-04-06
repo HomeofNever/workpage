@@ -137,31 +137,31 @@
       <code><a href="https://github.com/egoist/hack">hack.css</a></code> and ❤️ 
     </div>
     <button onclick="toggle_mode()" class="btn btn-default btn-ghost mode-switch">🌙</button>
-  </body>
-  <script>
-    let is_dark = false;
+    <script>
+      let is_dark = false;
 
-    function set_dark_mode() {
-      document.getElementsByTagName("body")[0].classList.add("dark-grey");
-      document.getElementsByClassName("mode-switch")[0].innerHTML = "☀️"
-      is_dark = true;
-    }
+      function set_dark_mode() {
+        document.getElementsByTagName("body")[0].classList.add("dark-grey");
+        document.getElementsByClassName("mode-switch")[0].innerHTML = "☀️"
+        is_dark = true;
+      }
 
-    function set_normal_mode() {
-      document.getElementsByTagName("body")[0].classList.remove("dark-grey");
-      document.getElementsByClassName("mode-switch")[0].innerHTML = "🌙"
-      is_dark = false;
-    }
+      function set_normal_mode() {
+        document.getElementsByTagName("body")[0].classList.remove("dark-grey");
+        document.getElementsByClassName("mode-switch")[0].innerHTML = "🌙"
+        is_dark = false;
+      }
 
-    function toggle_mode() {
-        is_dark ? set_normal_mode() : set_dark_mode()
-    }
+      function toggle_mode() {
+          is_dark ? set_normal_mode() : set_dark_mode()
+      }
 
-    if (
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-    ) {
-      set_dark_mode();
-    }
+      if (
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+      ) {
+        set_dark_mode();
+      }
   </script>
+  </body>
 </html>
